@@ -33,3 +33,13 @@
 **Environment:** Phone only - Chrome mobile + GitHub web interface (no laptop/Git Bash available)
 **Date:** 2026-10-28
 **Repository:** iyf-s12-week-03-preciousndegwa48
+
+
+
+# Terminal Log - Task 6.1
+
+1. git status
+2. git add styles.css
+3. git commit -m "Style: add navigation hover underline"
+4. git commit -m "Fix: correct responsive breakpoint for projects grid"
+5. git push origin main
