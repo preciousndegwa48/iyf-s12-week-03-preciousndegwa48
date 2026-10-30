@@ -1,42 +1,32 @@
-# Task 5.3: Terminal Command Answers
+DAY 1 - Terminal Only Setup
+mkdir -p daily-challenge-1/src/css daily-challenge-1/src/js
+touch daily-challenge-1/src/index.html
+touch daily-challenge-1/src/css/style.css
+touch daily-challenge-1/src/js/app.js
+touch daily-challenge-1/README.md
+ls -R daily-challenge-1
 
-### Q1: How many HTML files are in your portfolio project?
-Command: `find . -name "*.html"`
-Result:
-- index.html
-- box-model-practice.html
-Answer: 2 HTML files
+DAY 2 - Find Command Mastery
+find . -name "*.css" -type f
+find . -type f -mtime -7
+grep -rn "flex" --include="*.css" .
+grep -ro "div" --include="*.html" . | wc -l
 
-### Q2: Which files contain the word "contact"?
-Command: `grep -r "contact" ./`
-Result:
-- index.html (nav link / contact section)
-- README.md (Day 4 Contact Form)
-Answer: index.html, README.md
+DAY 3 - Boilerplate Script
+./new-project.sh creates HTML5 with viewport meta, link to css, script tag
+chmod +x new-project.sh
 
-### Q3: How many lines is your CSS file?
-Command: `wc -l styles.css`
-Result: 137 lines
-Answer: 137 lines (verified on GitHub)
+DAY 4 - Git Commits
+Style: add responsive navbar styles
+Update: enhance about page content
+Add: create contact page structure
+Fix: correct typo in live demo link
+Docs: document box model learning
 
-### Q4: What were your last 10 terminal commands?
-Command: `history | tail -10`
-Result:
-1. mkdir terminal-practice
-2. mkdir -p my-project/src/css
-3. touch my-project/README.md
-4. touch index.html
-5. cp index.html backup.html
-6. mv backup.html docs/
-7. mv index.html home.html
-8. rm home.html
-9. cp -r src/ src-backup/
-10. rm -r archive/
+DAY 5 - Profile README
+Pinned Week 1-3 repos
+Added tech stack badges
+Added Currently learning: Git Branch Protection, PR Workflow, Merge Conflicts
+Linked portfolio: preciousndegwa48.github.io/iyf-s12-week-03-preciousndegwa48
 
-## Environment
-Phone only - Chrome mobile + GitHub web interface (no laptop/Git Bash available)
-Date: 2026-10-28
-Repository: iyf-s12-week-03-preciousndegwa48
-Verification: Manual GitHub file browser + wc -l count
-
-
+Week 3 Checklist - All Done
