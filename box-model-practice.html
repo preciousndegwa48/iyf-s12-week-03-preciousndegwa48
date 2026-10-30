@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Practice - Precious Ndegwa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="nav-logo">Precious</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="box-model-practice.html"><strong>Box Model</strong></a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="practice-container">
+    <h1>Task 3.2: Box Model Mastery</h1>
+
+    <h2>Exercise 1: Visualization - Content, Padding, Border, Margin</h2>
+    <div class="box-demo">
+        <div class="demo-box">Content Area - Blue<br>Padding - Light Blue<br>Border - Dark Blue<br>Margin - Space outside</div>
+        <div class="demo-box">Second Box - Shows gap from margin</div>
+        <div class="demo-box">Third Box</div>
+        <div class="demo-box">Fourth Box</div>
+    </div>
+    <p><strong>Explanation:</strong> Content (text), Padding (space inside border), Border (line), Margin (space outside - 15px)</p>
+
+    <h2>Exercise 2: Debug Layout - Fix 340px issue</h2>
+    <h3>Broken Box (340px wide):</h3>
+    <div class="broken-box">Width 300px + Padding 20px*2 = 340px total! This overflows.</div>
+    <br>
+    <h3>Fixed Box (300px total):</h3>
+    <div class="fixed-box">Width 300px includes padding with box-sizing: border-box. Exact 300px!</div>
+    <p><strong>Fix:</strong> Added <code>box-sizing: border-box;</code> to include padding in width.</p>
+
+    <h2>Exercise 3: Card Component (Exact 300px)</h2>
+    <div class="card">
+        <img src="https://placehold.co/300x180" alt="Project">
+        <h3>Project Title - 15px margin-bottom</h3>
+        <p>Description text - card width 300px total with 20px padding and 1px border.</p>
+        <button>View Project</button>
+    </div>
+    <p><strong>Specs:</strong> Card width: 300px total, Padding: 20px, Border: 1px solid gray, Title margin-bottom: 15px, Image full width</p>
+</main>
+
+<footer>
+    <div class="footer-copyright"><p>&copy; 2026 Precious Ndegwa</p></div>
+</footer>
+</body>
+</html>
